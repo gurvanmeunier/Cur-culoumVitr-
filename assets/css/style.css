@@ -10,7 +10,13 @@ table{
     height: 50px;
 }
 body{
-    background-color: #f79eff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+header{
+    position: sticky;
+    top: 0;
 }
 nav{
     display: flex;
@@ -23,12 +29,65 @@ h1{
     flex-grow: 1;
     text-align: center;
 }
+main{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+#leftcol{
+    background-color: azure;
+    grid-column: 2;
+}
+#rightcol{
+    background-color: beige;
+    grid-column: 3/5;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+summary > p {
+    display: flex;
+     justify-content: right;
+}
+.poste, .course{
+    flex-grow: 1;
+}
 form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 5px;
 }
 input{
     padding: 0 5px;
+}
+footer{
+    position: sticky;
+    bottom: 0;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+}
+.interest{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.interest > p{
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.pitch , .schools , .works{
+    background-color: #e8a5cc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+main, p, section, h3, h4{
+    margin: 10px;
 }
