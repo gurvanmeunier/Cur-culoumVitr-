@@ -7,24 +7,51 @@
     Création d'une page contact avec un formulaire contenant les champs :
            nom, prénom, email, téléphone, sujet, message
 -->
-<form name="contact" action="/" method="POST">
-    <div class="infos">
-        <h3>Vos informations</h3>
-        <label for="prenom">Prénom :</label>
-        <input type="text" name="prenom" id="prenom" placeholder="Jean-Mimi" required>
-        <label for="nom">Nom :</label>
-        <input type="text" name="nom" id="nom" placeholder="Trotro" required>
-        <label for="email">Email :</label>
-        <input type="email" name="email" id="email" placeholder="user@ddresse.mail" required>
-        <label for="tel">Numéro de téléphone :</label>
-        <input type="tel" name="tel" id="tel" placeholder="+49 156 13265 12" required>
-    </div>
-    <div class="message">
-        <h3>Votre message</h3>
-        <label for="sujet">Sujet :</label>
-        <input type="text" name="sujet" id="sujet" placeholder="Sujet" required>
-        <br>
-        <textarea name="message" id="message" cols="100" rows="10" placeholder="Votre message pas trop long sinon c'est un peu chiant à lire..." required></textarea>
-    </div>
-    <button type="submit" name="submit">Envoyer</button>
-</form>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head> <!-- Head présent sur les deux pages-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Mon CV</title>
+</head>
+<body>
+    <header> <!-- Début du header ppréset sur les deux pages-->
+        <nav id="nav" class="nav">
+            <a href="index.html"><img src="assets/img/logo.png" alt="Image du logo" class="logo"></a>
+            <a href="index.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <a href="http://perdu.com">Plan du site</a>
+            <h1>Formulaire de contact</h1>
+        </nav>
+    </header>
+
+<!--Cut the head off-->
+
+    <main>
+        <form name="contact" action="contact.html" method="POST"> <!-- -->
+                <h3>Vos informations</h3>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Jean-Mimi" required>
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="Trotro" required>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="user@ddresse.mail" required>
+                <label for="tel">Numéro de téléphone :</label>
+                <input type="tel" name="tel" id="tel" placeholder="+49 156 13265 12" required>
+                <h3>Votre message</h3>
+                <label for="sujet">Sujet :</label>
+                <input type="text" name="sujet" id="sujet" placeholder="Sujet" required>
+                <textarea name="message" id="message" cols="100" rows="10" placeholder="Votre message pas trop long sinon c'est un peu chiant à lire..." required></textarea>
+                <button type="submit" name="submit">Envoyer</button>
+        </form>
+    </main>
+
+<!--Cut the feet off-->
+
+<footer> <!-- Débute du footer présent sur les deux pasges -->
+    <p>Rien à footer</p>
+       </footer>
+   </body>
+   </html>

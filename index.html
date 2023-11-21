@@ -1,30 +1,100 @@
+<!--
+    Étape 2 : Création de la structure HTML
+
+    Utilisation de balises sémantiques : 
+        Employez des balises sémantiques telles que :
+         <header>, <main>, <section>, <article>, <footer>, etc.
+
+    Diviser le CV en sections :
+        Expérience, Éducation, Compétences, Projets, etc.
+    
+    Ajout des contenus fictifs :
+        Remplir chaque section avec des données factices.
+    
+    Création d'une page contact avec un formulaire contenant les champs :
+        nom, prénom, email, téléphone, sujet, message
+-->
+
+
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head> <!-- Head présent sur les deux pages-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Mon CV</title>
 </head>
 <body>
+    <header> <!-- Début du header ppréset sur les deux pages-->
+        <nav id="nav" class="nav">
+            <a href="index.html"><img src="assets/img/logo.png" alt="Image du logo" class="logo"></a>
+            <a href="index.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <a href="http://perdu.com">Plan du site</a>
+            <h1>CV</h1>
+        </nav>
+    </header>
+
+<!--Cut the head off-->
+
     <main>
-        <section id="leftcol">
-            <div id="basics">
-                <h2 id="nom">Gurvan Meunier</h2>
-                <h3 id="headline">Dev Web et Web Mobile</h3>
-            <address>
-                <p>18 Pue de la raix</p>
-                <p>46800 Montcuq</p>              
-            </address>
-            <p id="tel"><a href="tel:+33651175118">+33656986545</a></p>
-            <p id="mail"><a href="mailto:exocv.gurv@nmeunier.com">exocv.gurv@nmeunier.com</a></p>
-            <p>Permis B, Véhicule personnel</p>
+        <!-- <div id="cols"> -->
+            <div id="leftcol">
+                <section id="basics"> <!-- -->
+                    <img src="assets/img/moi.jpg" alt="Ma photo de gros beau gosse">
+                    <h2 id="nom">Prénom Nom</h2>
+                    <h3 id="headline">Dev Web et Web Mobile</h3>
+                <address>
+                    <p>18 Pue de la raix</p>
+                    <p>46800 Montcuq</p>              
+                </address>
+                <p id="tel"><a href="tel:+33651175118">+33656986545</a></p>
+                <p id="mail"><a href="mailto:exocv.gurv@nmeunier.com">exocv.gurv@nmeunier.com</a></p>
+                <p>Permis B, Véhicule personnel</p>
+                </section>
+                <secion id="languages">
+                    <article id="lang1" class="lang">
+                        <h3>Anglais</h3>
+                        <p>Niveau B1 : Indépendant</p>
+                    </div>
+                    <article id="lang2" class="lang">
+                        <h3>Allemand</h3>
+                        <p>Niveau A1 : Élémentaire</p>
+                    </article>
+                </section>
             </div>
-            <div id="languages">
-                
+            <div id="rightcol">
+                <Section id="work" class="works">
+                    <details open>
+                        <summary>Expérience professionnelle Number Ouane</summary>
+                        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse.</p>
+                    </details>
+                </Section>
             </div>
-        </section>
-        <section id="rightcol"></section>
+        <!-- </div> -->
     </main>
+
+<!--Cut the feet off-->
+
+    <footer> <!-- Débute du footer présent sur les deux pasges -->
+ <p>Rien à footer à part un petite tableau html pour la forme</p>
+ <table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table> 
+    </footer>
 </body>
 </html>
