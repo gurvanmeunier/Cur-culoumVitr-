@@ -103,3 +103,6 @@ footer{
 main, section, h3, h4{
     padding: 10px;
 }
+#cogip{
+    color: red;
+}
