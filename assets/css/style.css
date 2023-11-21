@@ -9,10 +9,14 @@ table{
 .logo{
     height: 50px;
 }
+#moi{
+    border-radius: 75px;
+}
 body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: 100vh;
 }
 header{
     position: sticky;
@@ -30,21 +34,29 @@ h1{
     text-align: center;
 }
 main{
+    background-color: bisque;
     flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
+
 }
 #leftcol{
     background-color: azure;
     grid-column: 2;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    }
 #rightcol{
     background-color: beige;
     grid-column: 3/5;
     display: flex;
     flex-direction: column;
     align-content: center;
+    gap: 10px;
 }
 summary > p {
     display: flex;
@@ -84,10 +96,10 @@ footer{
 
 .pitch , .schools , .works{
     background-color: #e8a5cc;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
 }
 
-main, p, section, h3, h4{
-    margin: 10px;
+main, section, h3, h4{
+    padding: 10px;
 }
